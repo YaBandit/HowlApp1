@@ -4,9 +4,85 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#474747"
     tools:context=".LandingPage$PlaceholderFragment">
 
-    <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50pt"
+            android:gravity="center"
+            android:text="Attend Event"
+            android:id="@+id/AttendEventMainText"
+            android:clickable="false"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/AttendTextBox"
+            android:textColor="#ffffff"
+            android:autoText="false"
+            android:clickable="false"
+            android:background="#60c8c8c8"
+            android:editable="true"
+            android:text="..............................."
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:paddingLeft="40pt"
+            android:textAlignment="center">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:id="@+id/friendsCheckBoxDoYou"
+                android:checked="true"
+                android:textColor="#CCCCCC"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="true"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Everyone"
+                android:id="@+id/everyoneCheckBoxDoYou"
+                android:textColor="#CCCCCC"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="130dp"
+            android:textAllCaps="true"
+            android:background="#666666"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/AttendButtonAttendEvent"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#CCCCCC"/>
+
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
