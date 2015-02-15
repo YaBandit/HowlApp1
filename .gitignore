@@ -2,6 +2,9 @@
 .idea
 local.properties
 *.iml
+build
+*.bin
+*.lock
 
 # Windows image file caches
 Thumbs.db
